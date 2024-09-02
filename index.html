@@ -20,6 +20,9 @@
     <!-- styles link -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- queries link -->
+    <link rel="stylesheet" href="./css/queries.css" />
+
     <title>Omnifood — Never cook again!</title>
   </head>
   <body>
@@ -27,7 +30,8 @@
       <a href="#">
         <img src="assets/omnifood-logo.png" class="logo" alt="omnifood logo" />
       </a>
-      <nav>
+
+      <nav class="main-nav-box">
         <ul class="main-nav">
           <li>
             <a href="#how" class="nav-link">how it works</a>
@@ -44,12 +48,18 @@
           <li><a href="#cta" class="nav-link nav-cta">try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav" id="nav-btn">
+        <i class="menu fa fa-bars" aria-hidden="true"></i>
+
+        <i class="close fa fa-close"></i>
+      </button>
     </header>
 
     <main>
       <section class="section-hero">
         <div class="hero">
-          <div class="hero-text">
+          <div class="hero-text-box">
             <h1 class="heading-primary">
               A healthy meal delivered to your door, every single day
             </h1>
@@ -104,7 +114,7 @@
             </div>
           </div>
 
-          <div class="hero-img">
+          <div class="hero-img-box">
             <img
               src="assets/hero.png"
               alt="women enjoying food, meals in storage container , and food bowls on a table"
@@ -669,5 +679,7 @@
         </nav>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

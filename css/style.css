@@ -147,13 +147,10 @@ section.visible {
   cursor: pointer;
 }
 
-.svgIcon {
-  width: 12px;
+.button i {
+  color: #eee;
+  font-size: 15px;
   transition-duration: 0.3s;
-}
-
-.svgIcon path {
-  fill: white;
 }
 
 .button:hover {

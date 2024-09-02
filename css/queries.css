@@ -212,10 +212,9 @@
     height: 35px;
   }
 
-  .svgIcon {
-    width: 10px;
+  .button i {
+    font-size: 12px;
   }
-
   .grid {
     row-gap: 4.8rem;
   }

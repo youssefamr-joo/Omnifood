@@ -187,7 +187,7 @@ section.visible {
   padding: 0 4.8rem;
   background-color: var(--bg-hero-color);
   transition: all 0.3s;
-  z-index:99999999;
+  z-index: 9999999;
 }
 
 .sticky {

@@ -3,6 +3,8 @@ const listNavLink = document.querySelectorAll(".main-nav li");
 const navbar = document.querySelector("header");
 const sectionHero = document.querySelector(".section-hero");
 const sections = document.querySelectorAll("section");
+const btnDiv = document.querySelector("#btn-div");
+const btnUp = document.querySelector(".button");
 
 // open nav mobile
 listNavLink.forEach((link) => {
@@ -15,14 +17,14 @@ navBtn.addEventListener("click", () => {
 });
 
 // sticky nav
-
 window.addEventListener("scroll", () => {
   const sectionHeroHeight = sectionHero.offsetHeight;
-  const featuredSec = document.querySelector(".section-featured");
   if (window.scrollY > sectionHeroHeight - 100) {
     navbar.classList.add("sticky");
+    btnDiv.classList.add("visible");
   } else {
     navbar.classList.remove("sticky");
+    btnDiv.classList.remove("visible");
   }
 });
 

@@ -42,3 +42,8 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+// scroll up
+btnUp.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
